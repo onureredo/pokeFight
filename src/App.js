@@ -5,20 +5,16 @@ import Pokemon from './components/Pokemon';
 
 function App() {
   return (
+
     <Router>
-      <div className="App">
-        <div className="content">
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/pokemon" element={<Pokemon />} />
-          </Routes>
-
+      <div className="home">
+        <Home />
+        <div className="pokefight">
+          <Routes> <Route path="/pokemon" element={<Pokemon />} /> </Routes>
         </div>
       </div>
     </Router>
-
-   
+    
   );
 }
 
