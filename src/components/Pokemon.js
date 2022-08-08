@@ -3,7 +3,7 @@ import React from 'react'
 function pokemon() {
   return (
     <div className="pokefightContent">
-        <h1> Pokemon Component</h1>
+        <h2> Fight Area</h2>
     </div>
   )
 }
