@@ -1,10 +1,24 @@
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Pokemon from './components/Pokemon';
+
 
 function App() {
   return (
-    <div className="App">
-      <h2>pokeFight</h2>
-    </div>
+    <Router>
+      <div className="App">
+        <div className="content">
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/pokemon" element={<Pokemon />} />
+          </Routes>
+
+        </div>
+      </div>
+    </Router>
+
+   
   );
 }
 
