@@ -9,4 +9,41 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-image: url("./resources/image/background.jpg");
+  background-position: left;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  padding: 2rem;
+}
+
+h2 {
+  color: white;
+}
+
+.foreground {
+  backdrop-filter: blur(15px);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.start {
+  margin-top: 10rem;
+}
+
+.start a {
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 1rem;
+  border: 3px solid white;
+}
+
+.start a:hover {
+  color: white;
 }
