@@ -17,12 +17,15 @@ export default function Playground() {
         <div>
             <Container fluid className='foreground'>
                 <h2 className='title'>PokeFight</h2>
-                <Row>
-                    <Col>
+                <Row className="playground-container">
+                    <Col xs="3">
                         <h2>Player A</h2>
                         <Pokemon pokemonId={2} />
                     </Col>
-                    <Col>
+                    <Col xs="4">
+                        <button>Fight!</button>
+                    </Col>
+                    <Col xs="3">
                         <h2>Player B</h2>
                         <Pokemon pokemonId={3} />
                     </Col>
