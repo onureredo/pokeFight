@@ -55,35 +55,35 @@ export default function Pokemon({ pokemonId }) {
                 </Row>
                 <Row>
                     <Col>
-                        <h3 className="pokemon-name">{pokemonData.length != 0? pokemonData.name.english : null}</h3>
+                        <h3 className="pokemon-name">{pokemonData.length !== 0? pokemonData.name.english : null}</h3>
                     </Col>
                 </Row>
                 <Row>
                     <Col className="stat">
                         <Image className="card-icons" src={Pokeball} />
-                        <progress className="range" value={pokemonData.length != 0? pokemonData.base.HP : null} max="100"></progress>
-                        <p className="stat-number">{pokemonData.length != 0? pokemonData.base.HP : null}</p>
+                        <progress className="range" value={pokemonData.length !== 0? pokemonData.base.HP : null} max="100"></progress>
+                        <p className="stat-number">{pokemonData.length !== 0? pokemonData.base.HP : null}</p>
                     </Col>
                 </Row>
                 <Row>
                     <Col className="stat">
                         <Image className="card-icons" src={Sword} />
-                        <progress className="range" value={pokemonData.length != 0? pokemonData.base.Attack : null} max="100"></progress>
-                        <p className="stat-number">{pokemonData.length != 0? pokemonData.base.Attack : null}</p>
+                        <progress className="range" value={pokemonData.length !== 0? pokemonData.base.Attack : null} max="100"></progress>
+                        <p className="stat-number">{pokemonData.length !== 0? pokemonData.base.Attack : null}</p>
                     </Col>
                 </Row>
                 <Row>
                     <Col className="stat">
                         <Image className="card-icons" src={Shield} />
-                        <progress className="range" value={pokemonData.length != 0? pokemonData.base.Defense : null} max="100"></progress>
-                        <p className="stat-number">{pokemonData.length != 0? pokemonData.base.Defense : null}</p>
+                        <progress className="range" value={pokemonData.length !== 0? pokemonData.base.Defense : null} max="100"></progress>
+                        <p className="stat-number">{pokemonData.length !== 0? pokemonData.base.Defense : null}</p>
                     </Col>
                 </Row>
                 <Row>
                     <Col className="stat">
                         <Image className="card-icons" src={Speed} />
-                        <progress className="range" value={pokemonData.length != 0? pokemonData.base.Speed : null} max="100"></progress>
-                        <p className="stat-number">{pokemonData.length != 0? pokemonData.base.Speed : null}</p>
+                        <progress className="range" value={pokemonData.length !== 0? pokemonData.base.Speed : null} max="100"></progress>
+                        <p className="stat-number">{pokemonData.length !== 0? pokemonData.base.Speed : null}</p>
                     </Col>
                 </Row>
             </Container>
