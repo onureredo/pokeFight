@@ -13,8 +13,8 @@ export default function App() {
         <h2 className='title'>PokeFight</h2>
         <Row>
           <Col>
-            <div className='start'>
-              <Link to='playground'>Start the game</Link>
+            <div className='selectBtn'>
+              <Link to='/playground'>Start the game</Link>
             </div>
           </Col>
         </Row>

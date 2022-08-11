@@ -19,12 +19,24 @@ export default function Playground() {
                 <h2 className='title'>PokeFight</h2>
                 <Row>
                     <Col>
-                        <h2>Player A</h2>
-                        <Pokemon pokemonId={2} />
+                        <h2 className='playerTitle'>Player A</h2>
+                        {
+                            pokemonA.length > 0 ?
+                                <Pokemon pokemonId={pokemonA.id} /> :
+                                <div className='selectBtn'>
+                                    <Link to='/pokemonList'>Choose a Pokemon</Link>
+                                </div>
+                        }
                     </Col>
                     <Col>
-                        <h2>Player B</h2>
-                        <Pokemon pokemonId={3} />
+                        <h2 className='playerTitle'>Player B</h2>
+                        {
+                            pokemonB.length > 0 ?
+                                <Pokemon pokemonId={pokemonB.id} /> :
+                                <div className='selectBtn'>
+                                    <Link to='/pokemonList'>Choose a Pokemon</Link>
+                                </div>
+                        }
                     </Col>
                 </Row>
             </Container>
