@@ -13,10 +13,12 @@ function App() {
         <Home />
         <div className="pokefight">
           <Routes>
+    
             {/* <Route path="/" element={<Home />} /> */}
             <Route exact path="/pokemon" element={<Pokemon />} /> 
             <Route path="/pokemon/:id" element={<SingleCard />} /> 
             <Route path="/pokemon/:id/:info" element={<PokemonInfo />} /> 
+              
           </Routes>
         </div>
       </div>
